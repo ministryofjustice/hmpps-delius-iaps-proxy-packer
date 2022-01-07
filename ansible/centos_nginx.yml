@@ -1,0 +1,10 @@
+---
+
+- hosts: localhost
+  roles:
+    - packages
+  tasks:
+
+    - name: Install Goss
+      raw: "curl -fsSL https://goss.rocks/install | sh"
+      become: true
