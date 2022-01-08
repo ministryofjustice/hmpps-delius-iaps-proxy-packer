@@ -13,11 +13,6 @@
       "destination": "/tmp"
     },
     {
-      "type": "file",
-      "source": "assets/scripts/letsencrypt-renew.sh",
-      "destination": "/tmp/letsencrypt-renew.sh"
-    },
-    {
       "type": "shell",
       "execute_command": "echo 'packer' | sudo -S sh -c '{{ .Vars }} {{ .Path }}'",
       "script": "scripts/00_install_packages.sh"
