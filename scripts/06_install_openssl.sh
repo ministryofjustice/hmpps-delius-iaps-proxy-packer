@@ -4,6 +4,7 @@ sudo -i
 CURRENT_DIR=$(pwd)
 
 sudo yum update -y
+sudo yum group install 'Development Tools' -y
 sudo yum install perl-core zlib-devel -y
 
 cd /usr/local/src/
