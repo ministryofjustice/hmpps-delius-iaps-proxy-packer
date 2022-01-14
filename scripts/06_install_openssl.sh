@@ -3,7 +3,6 @@
 sudo -i
 CURRENT_DIR=$(pwd)
 
-sudo yum remove openssl -y
 sudo yum update -y
 sudo yum install perl-core zlib-devel -y
 
@@ -19,6 +18,7 @@ sudo make install
 cd /etc/ld.so.conf.d/
 cp /tmp/assets/openssl/openssl-1.1.1c.conf /etc/ld.so.conf.d/openssl-1.1.1c.conf
 sudo ldconfig -v
+sudo mv /bin/openssl /bin/openssl.backup
 
 cp /tmp/assets/openssl/openssl.sh /etc/profile.d/openssl.sh
 source /etc/profile.d/openssl.sh
