@@ -7,7 +7,6 @@ echo 'install letsencrypt certbot-nginx'
 echo '========================================'
 sudo yum install -y epel-release
 sudo yum install -y certbot-nginx
-sudo yum install -y tree
 
 echo '========================================'
 echo 'show certbot help to show its installed ok (we sometimes get python errors)'

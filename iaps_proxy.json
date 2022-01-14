@@ -20,6 +20,11 @@
     {
       "type": "shell",
       "execute_command": "echo 'packer' | sudo -S sh -c '{{ .Vars }} {{ .Path }}'",
+      "script": "scripts/04_install_openssl.sh"
+    },
+    {
+      "type": "shell",
+      "execute_command": "echo 'packer' | sudo -S sh -c '{{ .Vars }} {{ .Path }}'",
       "script": "scripts/05_install_nginx.sh"
     },
     {
