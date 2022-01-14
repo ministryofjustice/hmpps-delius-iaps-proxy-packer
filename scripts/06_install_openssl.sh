@@ -2,7 +2,8 @@
 
 sudo -i
 CURRENT_DIR=$(pwd)
-
+echo "Checking Openssl Version"
+openssl version
 sudo yum update -y
 sudo yum group install 'Development Tools' -y
 sudo yum install perl-core zlib-devel -y
