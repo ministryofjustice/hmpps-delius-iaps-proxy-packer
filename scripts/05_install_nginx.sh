@@ -2,7 +2,6 @@
 
 sudo -i
 
-sudo yum update -y
 sudo yum install -y nginx tree
 
 sudo systemctl enable nginx.service

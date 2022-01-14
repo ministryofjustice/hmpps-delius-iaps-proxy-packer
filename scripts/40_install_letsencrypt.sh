@@ -6,6 +6,7 @@ echo '========================================'
 echo 'install letsencrypt certbot-nginx'
 echo '========================================'
 sudo yum install -y epel-release
+sudo yum install python3 -y
 sudo yum install -y certbot-nginx
 
 echo '========================================'
